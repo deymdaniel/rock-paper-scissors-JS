@@ -1,44 +1,177 @@
-/* Computer chooses */
-let choice = ["Rock", "Paper", "Scissors"];
+// constants
+
+const choices = ["rock", "paper", "scissors"];
+let computerChoice;
+let userChoice;
+let playerScore = 0;
+let computerScore = 0;
+
+// player choice
+
+function getPlayerChoice() {
+  userChoice = prompt(choices).toLowerCase();
+  if (userChoice == "rock") {
+    console.log("You chose " + userChoice);
+  } else if (userChoice == "paper") {
+    console.log("You chose " + userChoice);
+  } else if (userChoice == "scissors") {
+    console.log("You chose " + userChoice);
+  } else if (userChoice == "") {
+    console.log("Invalid Input!");
+  } else {
+    console.log("Invalid input!");
+  }
+}
+
+//computer choice
 
 function getComputerChoice() {
-  return choice[Math.floor(Math.random() * a.length)];
+  computerChoice = choices[Math.floor(Math.random() * choices.length)];
+  console.log("Computer chose " + computerChoice);
 }
 
-/* Player chooses */
-let a = "Rock";
-let b = "Paper";
-let c = "Scissors";
-
-function playerChoice() {
-  let playerChoice = prompt("Choose");
-
-  if (playerChoice.toLowerCase() === a.toLowerCase()) {
-    playerChoice = a;
-    console.log("You chose Rock!");
-  } else if (playerChoice.toLowerCase() === b.toLowerCase()) {
-    playerChoice = b;
-    console.log("You chose Paper!");
-  } else if (playerChoice.toLowerCase() === c.toLowerCase()) {
-    playerChoice = c;
-    console.log("You chose Scissors!");
-  }
-}
-
-function result(playerChoice, getComputerChoice) {
-  if (playerChoice === getComputerChoice) {
-    alert("Tie");
-  } else if ((a, "Paper")) {
-    alert("Computer chose paper, you lose");
-  } else if ((b, "Scissors")) {
-    alert("Computer chose scissors, you lose");
-  } else if ((c, "Rock")) {
-    alert("Computer chose rock, you lose");
+//find winner
+function getResult() {
+  if (
+    (userChoice === "rock" && computerChoice === "scissors") ||
+    (userChoice === "paper" && computerChoice === "rock") ||
+    (userChoice === "scissors" && computerChoice === "paper")
+  ) {
+    playerScore++;
+    console.log(
+      "You win! " +
+        "Player Score: " +
+        playerScore +
+        " Computer Score: " +
+        computerScore
+    );
+  } else if (userChoice === computerChoice) {
+    console.log("Its a tie!");
   } else {
-    alert("computer chose " + getComputerChoice() + " you win");
+    computerScore++;
+    console.log(
+      "Computer wins! " +
+        "Player Score: " +
+        playerScore +
+        " Computer Score: " +
+        computerScore
+    );
   }
 }
 
-playerChoice();
-getComputerChoice();
-result(playerChoice, getComputerChoice);
+//round system
+
+function game() {
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+  if (playerScore == 3) {
+    alert("YOU WIN!!!!");
+    return;
+  } else if (computerScore == 3) {
+    alert("YOU LOSE");
+    return;
+  } else {
+    getPlayerChoice();
+    getComputerChoice();
+    getResult();
+  }
+}
+
+game();
