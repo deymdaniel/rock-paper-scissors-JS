@@ -62,115 +62,32 @@ function getResult() {
 //round system
 
 function game() {
-  if (playerScore == 3) {
+  getPlayerChoice();
+  getComputerChoice();
+  getResult();
+
+  getPlayerChoice();
+  getComputerChoice();
+  getResult();
+
+  getPlayerChoice();
+  getComputerChoice();
+  getResult();
+
+  getPlayerChoice();
+  getComputerChoice();
+  getResult();
+
+  getPlayerChoice();
+  getComputerChoice();
+  getResult();
+
+  if (playerScore == computerScore) {
+    alert("Its a tie");
+  } else if (playerScore > computerScore) {
     alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
   } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
     alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
-  }
-  if (playerScore == 3) {
-    alert("YOU WIN!!!!");
-    return;
-  } else if (computerScore == 3) {
-    alert("YOU LOSE");
-    return;
-  } else {
-    getPlayerChoice();
-    getComputerChoice();
-    getResult();
   }
 }
 
